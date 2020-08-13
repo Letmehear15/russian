@@ -8,17 +8,33 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="mainWord"></h1>
-        <div class="inputs">
-            <label for="man">Мужской род (masculine)</label>
-            <input id="man" type="text">
-            <label for="woman">Женский род (feminine)</label>
-            <input id="woman" type="text">
-            <label for="it">Средний род (it)</label>
-            <input id="it" type="text">
+        <div class="studyingBlock">
+            <h1>Studying mode</h1>
+            <h3>Masculine: ЫЙ</h3>
+            <span class="masculine studyingSpan"></span>
+            <h3>Feminine: АЯ</h3>
+            <span class="feminine studyingSpan"></span>
+            <h3>It: ОЕ</h3>
+            <span class="it studyingSpan"></span>
         </div>
-        <button class="btn check"> Проверить</button>
-        <button class="btn hide">Дальше</button>
+        <div class="lessonsBlock">
+            <h1 class="mainWord"></h1>
+            <div class="inputs">
+                <label for="man">Мужской род (masculine)</label>
+                <input class="getWord" id="man" type="text">
+                <label for="woman">Женский род (feminine)</label>
+                <input class="getWord" id="woman" type="text">
+                <label for="it">Средний род (it)</label>
+                <input class="getWord" id="it" type="text">
+            </div>
+            <button class="btn check"> Проверить</button>
+            <button class="btn hide">Дальше</button>
+            <div class="toggle">
+                <input type="checkbox" id='cb2' class="tgl tgl-ios">
+                <label for="cb2" class="tgl-btn"> </label>
+                <span>Studying mode</span>
+            </div>
+        </div>
     </div>
     <script src="./js.js"></script>
 </body>
